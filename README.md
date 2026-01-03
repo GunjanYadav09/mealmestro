@@ -1,4 +1,5 @@
 🍽️ MealMaestro
+LINK : sage-phoenix-105564.netlify.app
 
 📖 Description
 MealMaestro is a comprehensive meal planning and recipe management web application designed to simplify your kitchen routine. Plan meals, track pantry inventory, generate shopping lists, and discover new recipes - all in one intuitive platform.
