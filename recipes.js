@@ -149,7 +149,7 @@ async function getPopularRecipes() {
         // Get 8 random recipes for popular section
         const promises = [];
         for (let i = 0; i < 8; i++) {
-            promises.push(fetch('https://www.themealdb.com/api/json/v1/1/random.php'));
+            promises.push(fetch('your api key'));
         }
         
         const responses = await Promise.all(promises);
@@ -208,7 +208,7 @@ async function searchRecipesByName(query) {
 async function getRecipeDetails(recipeId) {
     try {
         const apiKey = window.secureApiKeys?.recipes || window.secureApiKeys?.themealdb;
-        let apiUrl = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${recipeId}`;
+        let apiUrl = `yourapikey{recipeId}`;
         
         if (apiKey) {
             // If you have a premium API, use it here
@@ -761,4 +761,5 @@ window.RecipesModule = {
     saveRecipeToCollection,
     addIngredientsToShoppingList,
     getMockRecipes
+
 };
