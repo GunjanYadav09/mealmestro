@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - MealMaestro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background-animation">
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="floating-food">
+            <div class="food-item"><i class="fas fa-carrot"></i></div>
+            <div class="food-item"><i class="fas fa-apple-alt"></i></div>
+            <div class="food-item"><i class="fas fa-cheese"></i></div>
+            <div class="food-item"><i class="fas fa-bread-slice"></i></div>
+            <div class="food-item"><i class="fas fa-fish"></i></div>
+            <div class="food-item"><i class="fas fa-egg"></i></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-utensils"></i>
+                <a href="index.html" style="text-decoration: none; color: inherit;"><span>MealMaestro</span></a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="pantry.html" class="nav-link"><i class="fas fa-camera"></i> Virtual Pantry</a>
+                <a href="planner.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Meal Planner</a>
+                <a href="recipes.html" class="nav-link active"><i class="fas fa-book"></i> Recipes</a>
+                <a href="shopping.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Shopping</a>
+            </div>
+            <div class="nav-actions">
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Recipe Search</h1>
+            <p class="page-subtitle">Search for recipes by name and get step-by-step instructions</p>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="recipe-search" class="form-label">Search Recipes</label>
+                    <div class="search-container">
+                        <input type="text" id="recipe-search" class="form-control" placeholder="Enter dish name (e.g., pasta, chicken curry, salad)">
+                        <button class="btn btn-primary" id="search-btn">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filters">
+                    <div class="form-group">
+                        <label class="form-label">Filters</label>
+                        <div class="filters-grid">
+                            <select id="cuisine-filter" class="form-control">
+                                <option value="">All Cuisines</option>
+                                <option value="italian">Italian</option>
+                                <option value="mexican">Mexican</option>
+                                <option value="indian">Indian</option>
+                                <option value="chinese">Chinese</option>
+                                <option value="mediterranean">Mediterranean</option>
+                            </select>
+                            
+                            <select id="diet-filter" class="form-control">
+                                <option value="">All Diets</option>
+                                <option value="vegetarian">Vegetarian</option>
+                                <option value="vegan">Vegan</option>
+                                <option value="gluten-free">Gluten-Free</option>
+                            </select>
+                            
+                            <select id="time-filter" class="form-control">
+                                <option value="">Any Time</option>
+                                <option value="15">Under 15 min</option>
+                                <option value="30">Under 30 min</option>
+                                <option value="60">Under 60 min</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Results -->
+            <div id="search-results" style="margin-top: 40px;">
+                <h2 style="text-align: center; margin-bottom: 30px;">Popular Recipes</h2>
+                <div class="recipes-grid" id="recipes-grid">
+                    <!-- Popular recipes will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Recipe Details Modal -->
+            <div id="recipe-modal" class="modal" style="display: none;">
+                <div class="modal-content recipe-modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div id="recipe-details">
+                        <!-- Recipe details will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>MealMaestro</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>MADE BY GUNJAN YADAV</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/recipes.js"></script>
+</body>
+</html>

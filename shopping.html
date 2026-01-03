@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping - MealMaestro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background-animation">
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="floating-food">
+            <div class="food-item"><i class="fas fa-carrot"></i></div>
+            <div class="food-item"><i class="fas fa-apple-alt"></i></div>
+            <div class="food-item"><i class="fas fa-cheese"></i></div>
+            <div class="food-item"><i class="fas fa-bread-slice"></i></div>
+            <div class="food-item"><i class="fas fa-fish"></i></div>
+            <div class="food-item"><i class="fas fa-egg"></i></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-utensils"></i>
+                <a href="index.html" style="text-decoration: none; color: inherit;"><span>MealMaestro</span></a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="pantry.html" class="nav-link"><i class="fas fa-camera"></i> Virtual Pantry</a>
+                <a href="planner.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Meal Planner</a>
+                <a href="recipes.html" class="nav-link"><i class="fas fa-book"></i> Recipes</a>
+                <a href="shopping.html" class="nav-link active"><i class="fas fa-shopping-cart"></i> Shopping</a>
+            </div>
+            <div class="nav-actions">
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Shopping</h1>
+            <p class="page-subtitle">Order missing ingredients directly from your favorite platforms</p>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Shopping Platforms -->
+            <div>
+                <h2 style="text-align: center; margin-bottom: 30px;">Shopping Platforms</h2>
+                <div class="platforms-grid">
+                    <a href="https://www.swiggy.com/instamart" target="_blank" class="platform-card">
+                        <div class="platform-logo instamart">
+                            <i class="fas fa-shopping-basket"></i>
+                        </div>
+                        <div class="platform-name">Swiggy Instamart</div>
+                        <div class="platform-desc">Quick grocery delivery</div>
+                        <div class="btn btn-primary platform-btn">
+                            Order Now
+                        </div>
+                    </a>
+                    
+                    <a href="https://blinkit.com" target="_blank" class="platform-card">
+                        <div class="platform-logo blinkit">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="platform-name">Blinkit</div>
+                        <div class="platform-desc">Instant delivery</div>
+                        <div class="btn btn-primary platform-btn">
+                            Order Now
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.zepto.com" target="_blank" class="platform-card">
+                        <div class="platform-logo zepto">
+                            <i class="fas fa-z"></i>
+                        </div>
+                        <div class="platform-name">Zepto</div>
+                        <div class="platform-desc">Super fast delivery</div>
+                        <div class="btn btn-primary platform-btn">
+                            Order Now
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Additional Shopping Options -->
+            <div style="margin-top: 50px;">
+                <h2 style="text-align: center; margin-bottom: 30px;">More Options</h2>
+                <div class="platforms-grid">
+                    <a href="https://bigbasket.com" target="_blank" class="platform-card">
+                        <div class="platform-logo bigbasket">
+                            <i class="fas fa-basket-shopping"></i>
+                        </div>
+                        <div class="platform-name">BigBasket</div>
+                        <div class="platform-desc">Large grocery orders</div>
+                        <div class="btn btn-primary platform-btn">
+                            Order Now
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.amazon.in/wholefoods" target="_blank" class="platform-card">
+                        <div class="platform-logo amazon">
+                            <i class="fab fa-amazon"></i>
+                        </div>
+                        <div class="platform-name">Amazon Fresh</div>
+                        <div class="platform-desc">Same/Next day delivery</div>
+                        <div class="btn btn-primary platform-btn">
+                            Order Now
+                        </div>
+                    </a>
+                    
+                    <a href="https://dmart.in" target="_blank" class="platform-card">
+                        <div class="platform-logo dmart">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="platform-name">D-Mart Ready</div>
+                        <div class="platform-desc">Budget shopping</div>
+                        <div class="btn btn-primary platform-btn">
+                            Order Now
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Recently Ordered -->
+            <div style="margin-top: 50px;">
+                <h2 style="text-align: center; margin-bottom: 30px;">Recently Ordered</h2>
+                <div class="recent-orders" id="recent-orders">
+                    <!-- Recent orders will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>MealMaestro</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/GunjanYadav09" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/gunjan-yadav-9a81a7345" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>MADE BY GUNJAN YADAV</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/shopping.js"></script>
+</body>
+</html>

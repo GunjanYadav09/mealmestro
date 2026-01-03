@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pantry - MealMaestro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background-animation">
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="floating-food">
+            <div class="food-item"><i class="fas fa-carrot"></i></div>
+            <div class="food-item"><i class="fas fa-apple-alt"></i></div>
+            <div class="food-item"><i class="fas fa-cheese"></i></div>
+            <div class="food-item"><i class="fas fa-bread-slice"></i></div>
+            <div class="food-item"><i class="fas fa-fish"></i></div>
+            <div class="food-item"><i class="fas fa-egg"></i></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-utensils"></i>
+                <a href="index.html" style="text-decoration: none; color: inherit;"><span>MealMaestro</span></a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="pantry.html" class="nav-link active">Virtual Pantry</a>
+                <a href="planner.html" class="nav-link">Meal Planner</a>
+                <a href="recipes.html" class="nav-link">Recipes</a>
+                <a href="shopping.html" class="nav-link">Shopping</a>
+            </div>
+            <div class="nav-actions">
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Virtual Pantry</h1>
+            <p class="page-subtitle">Upload a picture of your ingredients and get AI-generated recipes</p>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="form-container">
+                <div class="upload-area" id="upload-area">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p class="upload-text">Click to upload an image of your ingredients</p>
+                    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                </div>
+                <img id="image-preview" src="" alt="Preview">
+                
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" id="analyze-btn" disabled>Analyze Ingredients & Generate Recipes</button>
+                </div>
+                
+                <div id="ingredients-list" style="display: none;">
+                    <h3>Detected Ingredients</h3>
+                    <ul id="ingredients-ul"></ul>
+                </div>
+                
+                <div id="recipes-container" style="margin-top: 30px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>MealMaestro</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>MADE BY GUNJAN YADAV</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/pantry.js"></script>
+</body>
+</html>

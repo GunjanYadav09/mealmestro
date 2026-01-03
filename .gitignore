@@ -1,0 +1,33 @@
+.gitignore
+.env
+.env.local
+.env.*
+config.js
+secrets.js
+keys.js
+api-keys.js
+*.key
+*.pem
+*.crt
+
+# Netlify
+.netlify/
+netlify.toml
+
+# Node modules (if any)
+node_modules/
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+temp/
+tmp/

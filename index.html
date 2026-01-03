@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealMaestro - AI Recipe Generator</title>
+    
+    <!-- SEO & Social Meta Tags -->
+    <meta name="description" content="MealMaestro - AI-powered meal planning, recipe discovery, and pantry management">
+    <meta name="keywords" content="meal planning, recipes, pantry management, AI cooking, meal prep, shopping list, virtual pantry">
+    <meta name="author" content="Gunjan Yadav">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="MealMaestro - Smart Meal Planning">
+    <meta property="og:description" content="AI-powered meal planning, recipe discovery, and pantry management">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://your-site.netlify.app">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MealMaestro - Smart Meal Planning">
+    <meta name="twitter:description" content="AI-powered meal planning, recipe discovery, and pantry management">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background-animation">
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="floating-food">
+            <div class="food-item"><i class="fas fa-carrot"></i></div>
+            <div class="food-item"><i class="fas fa-apple-alt"></i></div>
+            <div class="food-item"><i class="fas fa-cheese"></i></div>
+            <div class="food-item"><i class="fas fa-bread-slice"></i></div>
+            <div class="food-item"><i class="fas fa-fish"></i></div>
+            <div class="food-item"><i class="fas fa-egg"></i></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-utensils"></i>
+                <span>MealMaestro</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="pantry.html" class="nav-link"><i class="fas fa-camera"></i> Virtual Pantry</a>
+                <a href="planner.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Meal Planner</a>
+                <a href="recipes.html" class="nav-link"><i class="fas fa-book"></i> Recipes</a>
+                <a href="shopping.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Shopping</a>
+            </div>
+            <div class="nav-actions">
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Transform Your Ingredients Into Delicious Meals</h1>
+            <p class="hero-subtitle">Upload a picture of your ingredients and get AI-generated recipes instantly</p>
+            <div class="hero-actions">
+                <a href="pantry.html" class="btn btn-primary">Try Virtual Pantry</a>
+                <a href="recipes.html" class="btn btn-secondary">Browse Recipes</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Delicious food">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">How MealMaestro Works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Upload Ingredients</h3>
+                    <p>Take a picture of your ingredients using our Virtual Pantry</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Recipe Generation</h3>
+                    <p>Our AI analyzes your ingredients and suggests perfect recipes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Meal Planning</h3>
+                    <p>Plan your meals for the week with our smart meal planner</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Easy Shopping</h3>
+                    <p>Order missing ingredients directly from popular platforms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>MealMaestro</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/GunjanYadav09" target="_blank" class="social-link" title="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gunjan-yadav-9a81a7345" target="_blank" class="social-link" title="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>MADE BY GUNJAN YADAV</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/script.js"></script>
+</body>
+</html>
