@@ -85,7 +85,7 @@ function showNotification(message, type = 'info') {
 // TheMealDB API Functions
 async function searchRecipesByName(query) {
     try {
-        let apiUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`;
+        let apiUrl = `https://yourapikeyhere?s=${query}`;
         const response = await fetch(apiUrl);
         
         if (!response.ok) {
@@ -105,7 +105,7 @@ async function searchRecipesByName(query) {
 // Get recipe details by ID
 async function getRecipeDetails(recipeId) {
     try {
-        const apiUrl = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${recipeId}`;
+        const apiUrl = `https://your api key?i=${recipeId}`;
         const response = await fetch(apiUrl);
         
         if (!response.ok) {
@@ -128,7 +128,7 @@ async function getRandomRecipes(count = 6) {
         const promises = [];
         
         for (let i = 0; i < count; i++) {
-            promises.push(fetch('https://www.themealdb.com/api/json/v1/1/random.php'));
+            promises.push(fetch('https://api key'));
         }
         
         const responses = await Promise.all(promises);
@@ -170,4 +170,5 @@ window.MealMaestro = {
     showLoading,
     hideLoading,
     showNotification
+
 };
